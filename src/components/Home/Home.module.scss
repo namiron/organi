@@ -1175,16 +1175,16 @@
     display: grid;
     gap: 30px;
 
-    grid-template-columns: repeat(3, minmax(280px, 1fr));
+    grid-template-columns: repeat(3, minmax(280px, 340px));
         grid-template-rows: repeat(4, minmax(280px, auto));
 
     @media (max-width:1023.98px) {
-        grid-template-columns: repeat(2, minmax(280px, 1fr));
+        grid-template-columns: repeat(2, minmax(280px, 340px));
         grid-template-rows: repeat(4, minmax(280px, auto));
     }
 
     @media (max-width:767.98px) {
-        grid-template-columns: repeat(1, minmax(280px, 1fr));
+        grid-template-columns: repeat(1, minmax(280px, 340px));
         grid-template-rows: repeat(12, minmax(280px, auto));
     }
 }
@@ -1192,22 +1192,23 @@
 .productShop {
     margin: 10px 0px;
     background: #F9F8F8;
+
     padding: 20px 0px;
     @extend %container;
     display: grid;
     gap: 30px;
-    grid-template-columns: repeat(4, minmax(280px, 1fr));
+    grid-template-columns: repeat(3, minmax(280px, 340px));
     grid-template-rows: repeat(1, minmax(280px, auto));
 
     @media (max-width:1023.98px) {
         justify-content: center;
-        grid-template-columns: repeat(2, minmax(280px, 1fr));
+        grid-template-columns: repeat(2, minmax(280px, 340px));
         grid-template-rows: repeat(2, minmax(280px, auto));
     }
 
     @media (max-width:767.98px) {
-        grid-template-columns: repeat(1, minmax(280px, 1fr));
-        grid-template-rows: repeat(4, minmax(280px, auto));
+        grid-template-columns: repeat(1, minmax(280px, 340px));
+            grid-template-rows: repeat(3, minmax(280px, auto));
     }
 }
 
@@ -1240,12 +1241,12 @@
     grid-template-rows: repeat(2, minmax(340px, auto));
 
     @media (max-width:1023.98px) {
-        grid-template-columns: repeat(2, minmax(340px, 1fr));
+        grid-template-columns: repeat(2, minmax(280px, 340px));
         grid-template-rows: repeat(3, minmax(340px, auto));
     }
 
     @media (max-width:767.98px) {
-        grid-template-columns: repeat(1, minmax(280px, 1fr));
+        grid-template-columns: repeat(1, minmax(280px, 340px));
         grid-template-rows: repeat(6, minmax(280px, auto));
     }
 }
@@ -1364,12 +1365,12 @@
     grid-template-rows: repeat(1, minmax(340px, auto));
 
     @media (max-width:1023.98px) {
-        grid-template-columns: repeat(2, minmax(340px, 1fr));
+        grid-template-columns: repeat(2, minmax(280px, 340px));
         grid-template-rows: repeat(2, minmax(340px, auto));
     }
 
     @media (max-width:767.98px) {
-        grid-template-columns: repeat(1, minmax(280px, 1fr));
+        grid-template-columns: repeat(1, minmax(280px, 340px));
         grid-template-rows: repeat(3, minmax(280px, auto));
     }
 }

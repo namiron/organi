@@ -1,11 +1,11 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 
-const BaseURL = 'http://localhost:3001'
+const BaseURL = 'https://65a10699600f49256fb0bd21.mockapi.io/healthier/v1'
 export const getProducts = createAsyncThunk(
     'products/getProducts',
     async (_, { rejectWithValue }) => {
         try {
-            const response = await fetch(`${BaseURL}/products`)
+            const response = await fetch(`${BaseURL}/food`)
             if (!response.ok) {
                 throw new Error('server error')
             }

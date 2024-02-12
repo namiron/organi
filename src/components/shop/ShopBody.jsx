@@ -12,13 +12,14 @@ import Subscribe from '../pages/subscribe/Subscribe';
 
 const ShopBody = () => {
     const { id } = useParams()
+
     const [productDetails, setProductDetails] = useState(null)
     const { list: productList, status, error } = useSelector((state) => state.products)
-    const topFourProducts = productList.slice(0, 4)
+    const topFourProducts = productList.slice(0, 3)
     const dispatch = useDispatch()
 
     useEffect(() => {
-        fetch(`http://localhost:3001/products/${id}`)
+        fetch(`https://65a10699600f49256fb0bd21.mockapi.io/healthier/v1/food/${id}`)
             .then(response => response.json())
             .then(data => setProductDetails(data))
             .catch(error => console.error('Error fetching product details:', error))
