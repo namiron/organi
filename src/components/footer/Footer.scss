@@ -1,0 +1,409 @@
+@import "./../variables.scss";
+
+//---------------------------------footer
+.footer {
+    padding-top: 100px;
+        @media (max-width:887px) {
+    padding-top: 50px;
+            }
+}
+.footerContainer {
+
+    max-width: $mw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:41px;
+    margin: 0 auto;
+    padding-bottom: 120px;
+    @media (max-width:887px) {
+        grid-template-columns: repeat(1, 0.8fr);
+        grid-template-rows: repeat(3, auto);
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+        gap:20px;
+    }
+    a{
+        color:$ct;
+    }
+    h3{
+        
+        font-weight: 700;
+    }
+}
+//---------------------------------/footer
+
+//----------------------------------title
+.emailTitle {
+}
+.contactUsTitle {
+    color:$ct;
+    background: #F1F8F4;
+    @media (max-width:767.98px){
+        background: #f1f8f400;
+    }
+}
+.logoContactUs {
+}
+.TitleContactUs {
+    font-size: $ffs;
+    font-weight: 700;
+    @media (max-width:887px) {
+        font-size: 25px;
+    }
+    @media (max-width:767px) {
+        font-size: 20px;
+    }
+}
+.ContactUsArrow {
+    display: none;
+}
+
+.contactUsTitle {
+    background: #f1f8f400;
+    @media (max-width:887px) {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        border-radius: 10px;
+        align-self: normal;
+        align-items: center;
+        background: #F1F8F4;
+        .ContactUsArrow {
+            width: 15px;
+            display: block;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+.phoneTitle {
+}
+.utilityTitle {
+    font-size: $ffs;
+    font-weight: 700;
+    @media (max-width:887px) {
+        font-size: 25px;
+    }
+    @media (max-width:767px) {
+        font-size: 20px;
+    }
+    @extend %displayCenter;
+    img{
+        width: 60%;
+    }
+}
+.addressTitle {
+}
+//----------------------------------title
+
+
+
+//---------------------------------contact-Us
+.contactUs {
+    @extend %displayFlexDirection;
+    align-items: flex-end;
+    color: $ct;
+    gap: 35px;
+    border-right: 1px solid #00000035;
+    padding-right: 50px;
+@media (max-width:887px) {
+    order:2;
+    border-right: 1px solid #00000000;
+    align-items: center;
+    padding-right: 0px;
+    gap: 0px;
+}
+}
+
+.email {
+    @extend %displayFlexDirection;
+    align-items: flex-end;
+    width: 100%;
+    gap: 10px;
+    @media (max-width:887px) {
+        align-items: center;
+    }
+}
+
+.phone {
+    @extend %displayFlexDirection;
+    align-items: flex-end;
+    width: 100%;
+    gap: 10px;
+    @media (max-width:887px) {
+        align-items: center;
+    }
+}
+
+.phoneNamber {
+}
+.address {
+    @extend %displayFlexDirection;
+    align-items: flex-end;
+    width: 100%;
+    gap: 10px;
+    @media (max-width:887px) {
+        align-items: center;
+    }
+}
+
+//------------------------------------/contact-Us
+
+
+//---------------------------------------organic
+.organic {
+    align-self: start;
+    padding-top: 10px;
+    @extend %displayFlexDirection;
+    align-items: center;
+    gap:25px;
+    @media (max-width:887px) {
+        align-self: center;
+        order:1;
+        gap:0px;
+    }
+}
+.organicLogos {
+    color:$ct;
+    background: #f1f8f400;
+    @media (max-width:887px) {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        border-radius: 10px;
+        align-self: normal;
+        align-items: center;
+        background: #F1F8F4;
+        .organicArrow {
+            width: 15px;
+            display: block;
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+
+}
+.logoOrganic {
+    max-width: 150px;
+    img{
+        width: 100%;
+    }
+    @media (max-width:887px) {
+        max-width: 120px;
+    }
+
+}
+.organicArrow {
+    display: none;
+}
+
+.organicText {
+    text-align: center;
+}
+.socialBlog {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.instagram {
+    @extend %displayCenter;
+    padding: 20px;
+    border-radius: 50%; 
+    background:#F1F8F4;
+}
+.facebook {
+    @extend %displayCenter;
+    padding: 20px;
+    border-radius: 50%; 
+    background:#F1F8F4;
+
+}
+.twitter {
+    @extend %displayCenter;
+    padding: 20px;
+    border-radius: 50%; 
+    background:#F1F8F4;
+
+}
+.pinterest {
+    @extend %displayCenter;
+    padding: 20px;
+    border-radius: 50%; 
+    background:#F1F8F4;
+
+}
+//---------------------------------------/organic
+
+
+//-----------------------------------------utility
+.utility {
+    gap: 30px;
+    @extend %displayFlexDirection;
+    align-self: start;
+    padding-left:50px;
+    border-left: 1px solid #00000050;
+    @media (max-width:887px) {
+        order:3;
+        border-left: 1px solid #00000000;
+        align-self: center;
+        padding-left:0px;
+        align-items: center;
+        gap:20px;
+    }
+}
+.utilityLogos {
+    color:$ct;
+    background: #f1f8f400;
+    align-self: flex-start;
+    @media (max-width:887px) {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        border-radius: 10px;
+        align-self: normal;
+        align-items: center;
+        background: #F1F8F4;
+        .ContactUsArrow {
+            width: 15px;
+            display:rgba(241, 248, 244, 0)
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+.logoUtility {
+}
+.utilityTitle {
+}
+.utilityArrow {
+    display: none;
+    @media (max-width:887px) {
+        display: block;
+        width: 15px;
+        img{
+            width: 100%;
+        }
+    }
+
+}
+
+//------------------------------------------------------------------------collapse
+.collapseUtility{   
+    align-items: flex-start;
+    gap: 30px;
+    @extend %displayFlexDirection;
+    @media (max-width:887px) {
+        align-items: center;
+        height: 0px;
+        overflow: hidden;
+        visibility: hidden;
+        transition: all 0.3s;
+        &.active{
+            height: auto;
+            overflow: visible;
+            visibility: visible;
+            transition: all 0.3s;
+        }
+    }
+}
+.collapseOrganic{
+    align-items: flex-start;
+    gap: 30px;
+    @extend %displayFlexDirection;
+    @media (max-width:887px) {
+        align-items: center;
+        height: 0px;
+        overflow: hidden;
+        visibility: hidden;
+        transition: all 0.3s;
+        &.active{
+            height: auto;
+            overflow: visible;
+            visibility: visible;
+            transition: all 0.3s;
+        }
+    }
+}
+.collapse{
+    align-items: flex-start;
+    gap: 30px;
+    @extend %displayFlexDirection;
+    @media (max-width:887px) {
+        align-items: center;
+        height: 0px;
+        overflow: hidden;
+        visibility: hidden;
+        transition: all 0.3s;
+        &.active{
+            height: auto;
+            overflow: visible;
+            visibility: visible;
+            transition: all 0.3s;
+        }
+    }
+}
+.collapseContactUs{
+    align-items: flex-start;
+    gap: 30px;
+    @extend %displayFlexDirection;
+    @media (max-width:887px) {
+        align-items: center;
+        height: 0px;
+        overflow: hidden;
+        visibility: hidden;
+        transition: all 0.3s;
+        &.active{
+            height: auto;
+            overflow: visible;
+            visibility: visible;
+            transition: all 0.3s;
+        }
+    }
+}
+//------------------------------------------------------------------------/collapse
+
+
+.guide {
+}
+.error {
+}
+.password {
+}
+.licences {
+}
+.changelog {
+}
+//-----------------------------------------/utility
+
+
+//-------------------------------------------information
+.organicInfo {
+    flex-shrink: 0;
+}
+.infoContainer{
+    display: flex;
+    gap: 10px;
+}
+.information{
+    display: flex;
+    padding: 17px 0px;
+    justify-content: center;
+    border-top: 1px solid #00000042;
+    @media (max-width:766.98px){
+        font-size: 10px;
+        padding: 10px;
+    }
+    @media (max-width:424.98px){
+        font-size: 8px;
+        padding: 10px;
+    }
+}
+
+//-------------------------------------------information
+

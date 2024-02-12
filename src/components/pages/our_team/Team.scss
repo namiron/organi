@@ -1,0 +1,53 @@
+@import "./../../variables.scss";
+
+.teams {}
+
+.teamsContainer {
+    padding: 100px 0px;
+    @extend %container;
+
+    @media (max-width:1024px) {
+        padding: 50px 0px;
+    }
+}
+
+.teamsHeading {
+    @extend %displayFlexDirection;
+    gap: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.teamsSubTitle {
+    text-align: center;
+    @extend %subTitle
+}
+
+.teamsTitle {
+    text-align: center;
+    @extend %title;
+}
+
+.teamsText {
+    text-align: center;
+}
+
+.teamsContent {
+    padding: 0px 15px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, minmax(280px, 1fr));
+    grid-template-rows: repeat(2, minmax(280px, auto));
+
+    @media (max-width:1023.98px) {
+        grid-template-columns: repeat(2, minmax(280px, 1fr));
+        grid-template-rows: repeat(3, minmax(280px, auto));
+    }
+
+    @media (max-width:767.98px) {
+        justify-items: center;
+        grid-template-columns: repeat(1, minmax(280px, 1fr));
+        grid-template-rows: repeat(6, minmax(280px, auto));
+    }
+}

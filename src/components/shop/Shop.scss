@@ -1,0 +1,146 @@
+@import "./../variables.scss";
+
+.shopBody {}
+
+.shopBodyContainer {
+    @extend %container;
+
+}
+
+.shopBodyImageContainer {}
+
+//--------------------------
+.shopBodyStar {
+    max-width: 100px;
+
+    img {
+        width: 100%;
+    }
+}
+
+.shopBodyCategories {
+    position: relative;
+
+    p {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 80px;
+        height: 40px;
+        border-radius: 10px;
+        padding: 5px;
+        color: #fff;
+        background: $ct;
+        @extend %displayCenter;
+    }
+}
+
+.shopBodyImage {
+    background: #F9F8F8;
+    border-radius: 30px;
+    max-width: 500px;
+
+    img {
+        width: 100%;
+    }
+}
+
+//--------------------------
+
+//------------------------------------shopBodyItem
+.shopBodyItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    overflow: hidden;
+    gap: 30px;
+
+    @media (max-width:1023.98px) {
+        flex-direction: column;
+    }
+}
+
+
+.shopBodyContantContainer {
+    max-width: 500px;
+    @extend %displayFlexDirection;
+    gap: 20px;
+}
+
+//---------------------------------shopBodyContantHeading
+.shopBodyContantHeading {
+    @extend %displayFlexDirection;
+    gap: 15px;
+}
+
+.shopBodyContantTitle {
+    @extend %title;
+}
+
+.shopBodyContantPrices {
+    @extend %displayComplect;
+    width: fit-content;
+    gap: 10px;
+}
+
+.shopBodyContantOldPrice {
+    color: #B8B8B8;
+    text-decoration: line-through;
+}
+
+.shopBodyContantPrice {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.shopBodyContantText {
+    line-height: 164%;
+}
+
+//---------------------------------shopBodyContantHeading
+
+
+.shopBodyButtons {}
+
+.shopBodyAddToCart {
+    margin-top: 10px;
+    font-size: 14px;
+    border-radius: 16px;
+    color: #fff;
+    background: #2d5565;
+    width: fit-content;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    transition: all 0.3s;
+
+
+    &:hover {
+        gap: 50px;
+        background: $sc;
+        color: #ffffff;
+        transition: all 0.3s;
+
+    }
+
+    @media (max-width:1023.98px) {
+        font-size: 14px;
+        padding: 10px 25px;
+    }
+
+    @media (max-width:767.98px) {
+        justify-content: space-between;
+        width: 100%;
+        font-size: 18px;
+        height: fit-content;
+    }
+
+    @media (max-width:424.98px) {
+        font-size: 10px;
+        padding: 10px 20px;
+    }
+}
+
+//------------------------------------shopBodyContantContainer

@@ -1,0 +1,211 @@
+@import "./../variables.scss";
+
+.contactUsContainer {
+    @extend %container;
+}
+
+.contactUsLocated {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    padding: 100px 0px;
+
+    @media (max-width:767.98px) {
+        flex-direction: column;
+    }
+}
+
+.contactOurFarms {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background: url('./../../img/bg-first-page/contactFarms.jpg') 100% 100% no-repeat;
+    padding: 40px;
+    border-radius: 30px;
+
+    @media (max-width:767.98px) {
+        flex-direction: column;
+    }
+}
+
+
+.contactOurFarmsContant {
+    position: relative;
+    max-width: 520px;
+    padding: 30px;
+    border-radius: 30px;
+    background: #fff;
+
+    @media (max-width:1023.98px) {
+        margin-left: 0px;
+        right: 0;
+    }
+}
+
+.contactOurFarmsHeading {}
+
+.contactOurFarmsSubTitle {}
+
+.contactOurFarmsTitle {}
+
+.contactOurFarmsText {}
+
+.contactLocation {}
+
+.contactUsFirstBlock {}
+
+//-------------------------------------form
+.contactUsFirstBlock {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contactUsTopRow {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.nameBlock {
+    max-width: 530px;
+    flex: 1 1 auto;
+}
+
+.emailBlock {
+    max-width: 530px;
+    border-radius: 10px;
+    border: 1px solid #7EB693;
+    padding: 10px;
+    flex: 1 1 auto;
+}
+
+.messageBlock {
+    border-radius: 10px;
+    border: 1px solid #7EB693;
+    padding: 10px;
+
+    textarea {
+        height: 150px;
+    }
+}
+
+.contactUsFirstRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+    @media (max-width:1023.98px) {
+        .nameBlock {
+            max-width: none;
+        }
+
+        .emailBlock {
+            max-width: none;
+        }
+
+        align-items: normal;
+        flex-direction: column;
+    }
+}
+
+.companyBlock {
+    max-width: 530px;
+    border-radius: 10px;
+    border: 1px solid #7EB693;
+    padding: 10px;
+    flex: 1 1 auto;
+}
+
+.subjectBlock {
+    max-width: 530px;
+    border-radius: 10px;
+    border: 1px solid #7EB693;
+    padding: 10px;
+    flex: 1 1 auto;
+}
+
+.fullName {
+    border: 1px solid #7EB693;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.email {}
+
+.contactUsSecondRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+    @media (max-width:1023.98px) {
+        align-items: normal;
+        flex-direction: column;
+
+        .subjectBlock {
+            max-width: none;
+
+        }
+
+        .companyBlock {
+            max-width: none;
+        }
+    }
+}
+
+.btnForm {
+    border-radius: 16px;
+    color: #fff;
+    background: #2d5565;
+    width: fit-content;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    transition: all 0.3s;
+    height: 70px;
+
+    &:hover {
+        gap: 50px;
+        background: #ffffff;
+        color: #274C5B;
+        transition: all 0.3s;
+        border: 1px solid #2d5565;
+    }
+
+    @media (max-width:1023.98px) {
+
+        font-size: 14px;
+        padding: 10px 25px;
+    }
+
+    @media (max-width:767.98px) {
+        justify-content: space-between;
+        width: 100%;
+        font-size: 18px;
+        height: fit-content;
+    }
+
+    @media (max-width:424.98px) {
+        font-size: 10px;
+        padding: 10px 20px;
+    }
+}
+
+.company {}
+
+.errorText {}
+
+.errorForm {}
+
+//-------------------------------------form

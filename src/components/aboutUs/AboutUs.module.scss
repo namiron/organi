@@ -1,0 +1,352 @@
+@import "./../variables.scss";
+
+.About {
+    position: relative;
+
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        z-index: -1;
+    }
+}
+
+.AboutContainer {
+    padding: 180px 0;
+
+    @media (max-width:766.98px) {
+        padding: 100px 0;
+    }
+
+    @media (max-width:424.98px) {
+        padding: 50px 0;
+
+        .title {
+            font-size: 20px
+        }
+    }
+}
+
+.title {
+    @extend %title;
+    text-align: center;
+}
+
+
+//==========================================================================================organickStore
+
+.organickStore {
+    background: #F9F8F8;
+    padding-top: 190px;
+    padding-bottom: 90px;
+
+    @media (max-width:767.98px) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+.organickStoreContainer {
+    @extend %container;
+}
+
+.organickStoreHeading {
+    max-width: 520px;
+    padding-bottom: 20px;
+}
+
+.organickStoreSubTitle {
+    @extend %subTitle;
+    padding-bottom: 10px;
+
+    @media (max-width:767.98px) {
+        font-size: 15px;
+    }
+}
+
+.organickStoreTitle {
+    @extend %title;
+
+    @media (max-width:767.98px) {
+        font-size: 20px;
+    }
+}
+
+.organickStoreContant {
+    @extend %displayComplect;
+    gap: 50px;
+
+    @media (max-width:767.98px) {
+        flex-direction: column;
+    }
+}
+
+.organickStoreContantItem {
+    @extend %displayFlexDirection;
+    gap: 10px;
+    max-width: 660px;
+}
+
+.organickStoreContanInner {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    border-radius: 49px;
+    padding: 29px;
+    background: #ECECEC;
+
+    @media (max-width:767.98px) {
+        padding: 15px;
+    }
+}
+
+.Circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: $sc 4px solid;
+}
+
+.text {
+    font-weight: 500;
+    color: $ct;
+    font-size: 20px;
+
+    @media (max-width:767.98px) {
+        font-size: 18px;
+    }
+}
+
+.subText {
+    line-height: 1.5;
+
+    @media (max-width:767.98px) {
+        font-size: 16px;
+    }
+}
+
+//-----------------------------------------------img
+.organickStoreImage {
+    max-width: 600px;
+    border-radius: 20px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+    }
+}
+
+//-----------------------------------------------img
+
+
+//---------------------------------------------------------advantages
+.advantages {
+    padding-bottom: 180px;
+    background: #F9F8F8;
+
+    @media (max-width:767.98px) {
+        padding-bottom: 50px;
+    }
+}
+
+.advantagesContainer {}
+
+.advantagesList {
+    max-width: 1240px;
+    margin: 0 auto;
+    @extend %gridColumns;
+}
+
+//---------------------------------------------------------advantages
+
+//---------------------------------------------------------advantages{ConstructionAdvantages}
+
+.itemAdvantages {
+    background: #fff;
+    @extend %displayFlexDirection;
+    align-items: center;
+    max-width: 250px;
+    padding: 50px;
+    border-radius: 30px;
+    gap: 15px;
+    height: 100%;
+}
+
+.itemImage {
+    width: 95px;
+    height: 95px;
+    border-radius: 18px;
+    background: #F9F8F8;
+    @extend %displayCenter;
+}
+
+.itemHolder {
+    width: 215px;
+    flex-shrink: 0;
+    @extend %displayFlexDirection;
+    gap: 15px;
+}
+
+.itemTitle {
+    color: #274C5B;
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+}
+
+.itemText {
+    color: #525C60;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+//---------------------------------------------------------advantages{ConstructionAdvantages}
+
+
+
+
+
+
+//==========================================================================================organickStore
+
+
+
+
+
+//===========================================================================================Experts
+
+//---------------------------------experts
+.experts {
+    padding: 170px 0px;
+
+    @media (max-width:767.98px) {
+        padding: 50px 0px;
+    }
+}
+
+.expertsContainer {
+    @extend %container;
+}
+
+.expertsHeading {
+    @extend %displayFlexDirection;
+    gap: 16px;
+    max-width: 700px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.expertsSubTitle {
+    text-align: center;
+    @extend %subTitle
+}
+
+.expertsTitle {
+    text-align: center;
+    @extend %title;
+}
+
+.expertsText {
+    color: #525C60;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 165.4%;
+}
+
+.expertsContant {
+    @extend %gridExperts;
+}
+
+
+//---------------------------------experts
+
+
+//---------------------------------Commons{experts}
+.expertsItem {}
+
+.expertsImage {
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    overflow: hidden;
+    max-width: 450px;
+
+    img {
+        width: 100%;
+    }
+}
+
+.holderExperts {
+    background: #F9F8F8;
+    padding: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    flex: 1 1 auto;
+    gap: 75px;
+    align-items: end;
+    filter: drop-shadow(0px 29px 44px rgba(150, 150, 150, 0.25));
+    transition: background 0.3s;
+
+    &:hover {
+        box-shadow: rgba(22, 22, 22, 0.865);
+        transition: background 0.3s;
+        background: #fff;
+    }
+
+    @media (max-width:767.98px) {
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+        padding: 15px;
+    }
+}
+
+.expertsInfo {}
+
+.expertsName {
+    font-size: 25px;
+    font-weight: 600;
+    color: $ct;
+
+    @media (max-width:424.98px) {
+        font-size: 18px;
+        padding-bottom: 5px;
+    }
+}
+
+.expertsPosition {
+    font-family: Yellowtail;
+    font-size: 20px;
+    color: #68A47F;
+
+    @media (max-width:424.98px) {
+        font-size: 16px;
+    }
+}
+
+.expertsSocial {
+    width: 70px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    img {
+        width: 20px;
+    }
+}
+
+//---------------------------------Commons{experts}
+
+
+
+
+
+//===========================================================================================Experts

@@ -1,0 +1,239 @@
+@use 'sass:math';
+
+$ffs: 30px;
+
+%background {
+  background: #F9F8F8;
+}
+
+%container {
+  max-width: 1440px;
+  padding: 0px 20px;
+  margin: 0 auto;
+}
+
+$mw: 1440px;
+
+$sc: #68A47F;
+$ct: #274C5B;
+
+%linksHeader {
+  font-size: 20px;
+  color: #fff;
+}
+
+%ButtonTransparent {
+  color: $ct;
+  background: #2d556500;
+  width: 220px;
+  font-weight: 500;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  transition: all 0.3s;
+  border: 1px solid $ct;
+  border-radius: 10px;
+  height: 70px;
+
+  p {
+    flex-shrink: 0;
+  }
+
+  .btnImageHolder {
+    transition: all 0.3s;
+    flex-shrink: 0;
+  }
+
+  &:hover {
+    gap: 50px;
+    transition: all 0.3s;
+  }
+
+  @media (max-width:1023.98px) {
+    justify-content: space-between;
+    height: fit-content;
+    font-size: 14px;
+    padding: 15px 25px;
+  }
+
+  @media (max-width:767.98px) {
+    width: 100%;
+    font-size: 10px;
+    padding: 10px 20px;
+  }
+}
+
+%btnDarckGreen {
+  border-radius: 16px;
+  color: #fff;
+  background: #2d5565;
+  width: fit-content;
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  transition: all 0.3s;
+  height: 70px;
+
+  &:hover {
+    gap: 50px;
+    background: #ffffff;
+    color: #274C5B;
+    transition: all 0.3s;
+    border: 1px solid #2d5565;
+  }
+
+  @media (max-width:1023.98px) {
+    font-size: 14px;
+    padding: 10px 25px;
+  }
+
+  @media (max-width:767.98px) {
+    justify-content: space-between;
+    width: 100%;
+    font-size: 18px;
+    height: fit-content;
+  }
+
+  @media (max-width:424.98px) {
+    font-size: 10px;
+    padding: 10px 20px;
+  }
+}
+
+%buttonGold {
+  border-radius: 16px;
+  color: #2d5565;
+  background: #EFD372;
+  transition: all 0.3s;
+
+  width: fit-content;
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  transition: all 0.3s;
+  height: 70px;
+
+  &:hover {
+    background: #fac802;
+    color: #fff;
+    gap: 40px;
+  }
+
+  @media (max-width:1023.98px) {
+    height: fit-content;
+    font-size: 14px;
+    padding: 15px 25px;
+  }
+
+  @media (max-width:767.98px) {
+    justify-content: space-between;
+    width: 100%;
+    font-size: 10px;
+    padding: 10px 20px;
+  }
+}
+
+%displayFlexDirection {
+  display: flex;
+  flex-direction: column;
+}
+
+%displayComplect {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+%displayEvery {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+%displayCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%subTitle {
+  font-family: Yellowtail;
+  font-size: 36px;
+  color: #68A47F;
+
+  @media (max-width:767.98px) {
+    font-size: 25px;
+  }
+
+  @media (max-width:424.98px) {
+    font-size: 18px;
+  }
+}
+
+%title {
+  font-weight: 600;
+  font-size: 40px;
+  color: #274C5B;
+
+  @media (max-width:767.98px) {
+    font-size: 30px;
+  }
+
+  @media (max-width:424.98px) {
+    font-size: 20px;
+  }
+}
+
+%gridComplect {
+  display: grid;
+  grid-template: 1fr / minmax(150px, 250px) 1fr;
+  height: 100%;
+}
+
+%gridColumns {
+  display: grid;
+  gap: 10px;
+  justify-items: center;
+  align-items: baseline;
+  grid-template-columns: repeat(4, minmax(280px, 1fr));
+  grid-template-rows: repeat(1, minmax(280px, auto));
+
+  @media (max-width:1023.98px) {
+    grid-template-columns: repeat(2, minmax(280px, 1fr));
+    grid-template-rows: repeat(2, minmax(280px, auto));
+  }
+
+  @media (max-width:767.98px) {
+    grid-template-columns: repeat(1, minmax(280px, 1fr));
+    grid-template-rows: repeat(4, minmax(280px, auto));
+  }
+}
+
+%gridExperts {
+  display: grid;
+  gap: 30px;
+  justify-items: center;
+  align-items: baseline;
+  grid-template-columns: repeat(3, minmax(280px, 1fr));
+  grid-template-rows: repeat(1, minmax(280px, auto));
+
+  @media (max-width:1023.98px) {
+    grid-template-columns: repeat(2, minmax(280px, 1fr));
+    grid-template-rows: repeat(2, minmax(280px, auto));
+  }
+
+  @media (max-width:767.98px) {
+    grid-template-columns: repeat(1, minmax(280px, 1fr));
+    grid-template-rows: repeat(3, minmax(280px, auto));
+  }
+}
+
+%colorDefolWthite {
+  color: #fff;
+}
+
+//   @import "variables.scss";

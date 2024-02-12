@@ -1,0 +1,275 @@
+@import "./../../variables.scss";
+
+//=============================================================ServicesSingle
+
+.board {
+    padding: 150px 0px;
+
+    @media (max-width:767.98px) {
+        padding: 50px 0px;
+    }
+}
+
+.boardContainer {
+    @extend %container;
+}
+
+.boardHeading {
+    max-width: 480px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.boardSubTitle {
+    text-align: center;
+    @extend %subTitle;
+    padding-bottom: 10px;
+}
+
+.boardTitle {
+    text-align: center;
+    @extend %title;
+}
+
+.boardContent {
+    @extend %displayComplect;
+    padding-bottom: 20px;
+
+    @media (max-width:1023.98px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.boardInner {
+    gap: 40px;
+    @extend %displayFlexDirection;
+}
+
+.boardImage {
+    max-width: 500px;
+
+    img {
+        width: 90%;
+    }
+}
+
+.boardHolder {
+    gap: 40px;
+    @extend %displayFlexDirection;
+}
+
+.boardHolderBtn {
+    display: flex;
+    justify-content: center;
+
+    @media (max-width:767.98px) {
+        width: 160px;
+        margin: 0 auto;
+    }
+}
+
+//===================================================================quality=============================>
+
+//--------------------------------------------------Services
+.quality {}
+
+.qualityContainer {
+    padding-top: 100px;
+    @extend %container;
+    @extend %displayFlexDirection;
+    gap: 100px;
+
+    @media (max-width:767.98px) {
+        gap: 50px;
+        padding-top: 50px;
+    }
+}
+
+.qualityimage {
+    width: fit-content;
+
+    img {
+        width: 100%;
+    }
+}
+
+.qualityContent {
+    @extend %displayFlexDirection;
+    gap: 50px;
+    max-width: 940px;
+    margin: 0 auto;
+
+    @media (max-width:767.98px) {
+        gap: 20px;
+    }
+}
+
+.qualityHolder {
+    @extend %displayFlexDirection;
+    gap: 20px;
+
+}
+
+.qualityInner {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    @media (max-width:767.98px) {
+        flex-direction: column;
+    }
+}
+
+.qualityInnerReverce {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    gap: 20px;
+
+    @media (max-width:767.98px) {
+        flex-direction: column;
+    }
+}
+
+.qualityRow {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 100px;
+
+    @media (max-width:767.98px) {
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+}
+
+//--------------------------------------------------Services
+
+
+//-----------------------------------------QualityDescr
+
+.descriptionHolder {
+    gap: 40px;
+    @extend %displayFlexDirection;
+    max-width: 930px
+}
+
+.descriptionTitle {
+    @extend %title;
+
+    @media (max-width:767.98px) {
+        font-size: 20px;
+    }
+}
+
+.descriptionText {
+    color: $ct;
+    line-height: 165.4%;
+
+    @media (max-width:767.98px) {
+        font-size: 16px;
+    }
+}
+
+.descriptionSubText {
+    color: $ct;
+    line-height: 165.4%;
+
+    @media (max-width:767.98px) {
+        font-size: 14px;
+    }
+}
+
+//-----------------------------------------QualityDescr
+
+
+//----------------------------------------------QualityExample
+
+.qualityExampleImage {
+    max-width: 540px;
+    border-radius: 20px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+    }
+}
+
+.qualityExampleСontext {
+    padding: 45px;
+    border-radius: 20px;
+    background: #F9F8F8;
+    max-width: 540px;
+}
+
+.qualityExampleTitle {
+    color: $ct;
+    font-size: 25px;
+    font-weight: 500;
+    padding-bottom: 10px;
+
+    @media (max-width:767.98px) {
+        font-size: 18px;
+    }
+}
+
+.qualityExampleText {
+    color: $ct;
+    font-size: 18px;
+    line-height: 165.4%;
+
+    @media (max-width:767.98px) {
+        font-size: 16px;
+    }
+}
+
+
+//----------------------------------------------QualityExample
+
+//--------------------------------------Advantages
+
+.advantagesContent {
+    background: #F9F8F8;
+    padding: 15px 53px 15px 17px;
+    border-radius: 100px;
+    gap: 25px;
+    @extend %displayComplect;
+    max-width: fit-content;
+}
+
+.advantagesInnerNumber {
+    width: 69px;
+    height: 69px;
+    border-radius: 50%;
+    background: $sc;
+    @extend %displayCenter;
+}
+
+.advantagesNumber {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+
+    @media (max-width:767.98px) {
+        font-size: 18px;
+    }
+}
+
+.advantagesText {
+    font-size: 25px;
+    color: $ct;
+    font-weight: 600;
+
+    @media (max-width:767.98px) {
+        font-size: 16px;
+    }
+}
+
+//--------------------------------------Advantages
+
+
+//=============================================================ServicesSingle
+
+
+//===================================================================quality=============================>
