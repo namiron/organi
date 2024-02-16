@@ -2,12 +2,13 @@
 
 .header {
 	background: #fff;
-	position: fixed;
-	top: 0%;
-	left: 0%;
+	position: relative;
 	width: 100%;
-	padding: 10px 16px;
-	z-index: 220;
+	min-height: 85px;
+		z-index: 200;
+		top: 0;
+		left: 0;
+		padding: 10px;
 }
 
 .container {
@@ -17,6 +18,9 @@
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 50px;
+	@media (max-width:425px) {
+			flex-direction: column;
+		}
 }
 
 .logo {
@@ -90,10 +94,10 @@
 }
 
 .body {
-	@media (max-width: 720px) {
+	@media (max-width: 725px) {
 		position: absolute;
-		top: calc(100% + 5px);
-		right: 40px;
+		top: calc(95% + 5px);
+			right: 20px;
 		width: 220px;
 		padding: 25px;
 		border: 1px solid $sc;
@@ -156,14 +160,11 @@
 }
 
 .item {
+	position: relative;
+		display: flex;
+		align-items: center;
+		gap: 10px;
 	transition: 0.3s;
-	color: #fff;
-
-	.link:hover {
-		transition: 0.3s;
-		color: #7EB693;
-		text-decoration: underline;
-	}
 }
 
 .link {
@@ -193,7 +194,6 @@
 .cartBlock {
 	@extend %displayComplect;
 	gap: 5px;
-	margin-right: 5vw;
 	border: 1px solid #274c5b29;
 	padding: 5px 10px;
 	border-radius: 30px;
@@ -215,3 +215,40 @@
 .cartText {}
 
 //------------------------------------------------cart
+.item:hover .sabList {
+	height: auto;
+	opacity: 1;
+	visibility: visible;
+	transition: all 0.3s;
+}
+
+.sabList {
+	background: rgb(220, 236, 198);
+	position: absolute;
+	top: 20px;
+	left: 0;
+	width: 120px;
+	opacity: 0;
+	transition: all 0.3s;
+	padding: 10px;
+	visibility: hidden;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+
+.item:hover .sabList {}
+
+
+.sabList li {
+	list-style-type: none;
+
+}
+
+.sabList li:hover {
+	background-color: #fff;
+
+	color: #000;
+
+}

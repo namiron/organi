@@ -72,7 +72,7 @@
      }
  }
 
- .menuList {
+ .list {
      @media (max-width:767px) {
          padding: 15px;
          background: #e0f8e9f3;
@@ -88,7 +88,7 @@
          margin-left: 20px;
 
          &:hover {
-             .menuSabList {
+            .sabList {
                  opacity: 1;
                  padding-left: 15px;
                  height: 150px;
@@ -110,7 +110,7 @@
              }
 
              &:hover {
-                 .menuSabList {
+                .sabList {
                      position: relative;
                      left: 0;
                      height: 120px;
@@ -146,7 +146,7 @@
      }
  }
 
- .menuSabList {
+ .sabList {
      position: absolute;
      top: 100%;
      padding-right: 10px;
@@ -174,7 +174,7 @@
      transition: 0.3s;
  }
 
- .menuSubLink {
+ .subLink {
      font-size: 18px;
      color: #274C5B;
      transition: 0.3s;

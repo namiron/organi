@@ -1,7 +1,7 @@
 {
   "name": "app",
   "version": "0.1.0",
-  "homepage": "https://namiron.github.io/org",
+  "homepage": "https://namiron.github.io/organi",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.7",

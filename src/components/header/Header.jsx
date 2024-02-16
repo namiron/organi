@@ -25,7 +25,7 @@ const Header = () => {
         <>
             <header className={h.header}>
                 <div className={h.container}>
-                    <NavLink to={'organ'} className="logo">
+                    <NavLink to={'home'} className="logo">
                         <img src={logo} alt="logo-type" />
                     </NavLink>
                     <div className={h.menu}>
@@ -34,18 +34,19 @@ const Header = () => {
                                 <li className={h.item}><NavLink to={'home'} >Home</NavLink></li>
                                 <li className={h.item}><NavLink to={'aboutus'}> About Us</NavLink></li>
                                 <li className={h.item}><NavLink to={'shop'}> Shop</NavLink></li>
-                                <NavLink className={h.menuLink}> Pages <img src={arrow} alt="arrow" />
-                                    <ul className={h.menuSabList}>
-                                        <li>
-                                            <NavLink to={'services'} className={h.menuSubLink}>Services</NavLink>
+                                <NavLink className={h.item}> Pages <img src={arrow} alt="arrow" />
+                                    <ul className={h.sabList}>
+                                        <li className={h.subLink}>
+                                            <NavLink to={'services'} >Services</NavLink>
                                         </li>
-                                        <li>
-                                            <NavLink to={'services_single'} className={h.menuSubLink}>Service Single</NavLink>
+                                        <li >
+                                            <NavLink to={'services_single'} >Service Single</NavLink>
                                         </li>
-                                        <li>
-                                            <NavLink to={'our_team'} className={h.menuSubLink}>Our team</NavLink>
+                                        <li className={h.subLink}>
+                                            <NavLink to={'our_team'}>Our team</NavLink>
                                         </li>
                                     </ul>
+
                                 </NavLink>
                                 <li className={h.item}><NavLink to={'contact_us'}  >Contact Us</NavLink></li>
                             </ul>

@@ -90,7 +90,7 @@ const Footer =()=>{
                 <div className="infoContainer">
                     <p className='organicInfo'>Copyright © <span>Organick</span> |</p>
                     <p className='organicInfo'>developer for <span>React</span> |</p>
-                    <p className='organicInfo'>Alexsandr Samsonov <span>2024</span></p>
+                    <p className='organicInfo'>Alexsandr Samsonov <span>2021</span></p>
                 </div>
                 
             </div>

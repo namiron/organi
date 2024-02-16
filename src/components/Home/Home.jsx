@@ -54,7 +54,7 @@ const Home = () => {
                                 of life
                             </h1>
                             <NavLink to={'/shop'} className={home.buttonStyle}>
-                                <p className={home.btnText}>'Explore Now'</p>
+                                <p className={home.btnText}>Explore Now</p>
                                 <div className={home.btnImageHolder}>
                                     <img src={vector} alt="vector-icons" />
                                 </div>

@@ -8,11 +8,9 @@ import './null.css'
 const App = () => {
   return (
     <div className="wrapper">
-      <Header />
       <main className="main">
         <Main />
       </main>
-      <Footer />
     </div>
   );
 }
