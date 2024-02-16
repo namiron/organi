@@ -41,52 +41,7 @@
 
  }
 
- .burger {
-     background: #00000000;
-     display: none;
 
-     @media (max-width:767px) {
-         z-index: 50;
-         display: block;
-         position: relative;
-         width: 30px;
-         height: 18px;
-         cursor: pointer;
-
-         &::before {
-             content: '';
-             position: absolute;
-             left: 0;
-             height: 10%;
-             width: 100%;
-             transition: all 0.0s ease 0s;
-             background: #fff;
-             bottom: 0;
-
-         }
-
-         &::after {
-             content: '';
-             top: 0;
-             position: absolute;
-             left: 0;
-             height: 10%;
-             width: 100%;
-             transition: all 0.0s ease 0s;
-             background: #fff;
-         }
-
-         span {
-             top: 50%;
-             left: 0%;
-             position: absolute;
-             transform: scale(1) translate(0px, -50%);
-             background: #fff;
-             height: 10%;
-             width: 100%;
-         }
-     }
- }
 
  .menuBody {
      @media (max-width:767px) {
@@ -232,37 +187,3 @@
 
  }
 
- .cart {
-     @extend %displayComplect;
-     position: relative;
-     z-index: 200;
-
-     @media (max-width:767px) {
-         justify-content: space-between;
-         gap: 45px;
-     }
- }
-
- .cartBlock {
-     @extend %displayComplect;
-     gap: 5px;
-     margin-right: 5vw;
-     border: 1px solid #274c5b29;
-     padding: 5px 10px;
-     border-radius: 30px;
-     transition: all 0.3s;
-
-     &:hover {
-         background: $sc;
-         color: #fff;
-     }
- }
-
- .cartBody {
-     padding: 10px;
-     border-radius: 50%;
-     padding: 15px;
-     background: #274C5B;
- }
-
- .cartText {}

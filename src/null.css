@@ -60,6 +60,7 @@ input::-ms-clear {
 }
 
 button {
+	background: transparent;
 	cursor: pointer;
 }
 

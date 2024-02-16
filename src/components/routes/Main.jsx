@@ -20,8 +20,7 @@ const Main = () => {
             <Route path={ROUTES.layout} element={<Layout />} >
             <Route path={ROUTES.home} index element={<Home />}></Route>
             <Route path={ROUTES.aboutUs} element={<AboutUs />}></Route>
-            <Route path={ROUTES.shop} element={<Shop />}></Route>
-                <Route path={ROUTES.home_shop} element={<Shop />}></Route>
+                <Route path={ROUTES.shop} element={<Shop />}></Route>
             <Route path={ROUTES.shop_body} element={<ShopBody />}></Route>
             <Route path={ROUTES.cart} element={<Cart />}></Route>
             <Route path={ROUTES.services} element={<Services />}></Route>

@@ -5,7 +5,7 @@ export const ROUTES = {
     home: 'home',
     aboutUs: 'aboutus',
     not_fount: '/*',
-    home_shop: 'home/shop',
+    shop: 'shop',
     cart: 'cart',
     shop_body: "shop/:id",
     services: 'services',
