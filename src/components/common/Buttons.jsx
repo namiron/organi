@@ -54,7 +54,7 @@ export const Back = ({ btnHome, btnBack }) => {
                         <img src={vector} alt="vector-icons" style={{ transform: 'rotate(180deg)' }} />
                     </div>
                 </button>
-                <NavLink to={'home'} className="backToHome" style={{
+                <NavLink to={'organ'} className="backToHome" style={{
                     display: 'flex',
                     alignItems: 'center',
                     gap: '10px'

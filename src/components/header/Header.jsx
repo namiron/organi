@@ -22,7 +22,7 @@ const Header = () => {
     return (
         <header className="header">
             <div className="container">
-                <NavLink to={'home'} className="logo">
+                <NavLink to={'organ'} className="logo">
                     <img src={logo} alt="logo-type" />
                 </NavLink>
                 <div className="menu">
@@ -30,7 +30,7 @@ const Header = () => {
                     <nav className='menuBody'>
                         <ul className={`menuList ${isOpen ? '' : 'open'}`}>
                             <li>
-                                <NavLink to={'home'} className='menuLink'> Home</NavLink>
+                                <NavLink to={'organ'} className='menuLink'> Home</NavLink>
                             </li>
                             <li>
                                 <NavLink to={'aboutus'} className='menuLink'> About Us</NavLink>
