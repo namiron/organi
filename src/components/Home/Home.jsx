@@ -27,6 +27,7 @@ import authorPhoto from './../../img/icons/man.svg'
 import Subscribe from '../pages/subscribe/Subscribe'
 import { OfferProducts, OurProducts } from '../pages/products/Products'
 import { ButtonStyle, ButtonTransparent } from '../common/Buttons'
+import { NavLink } from 'react-router-dom'
 
 const flickityOptions = {
     initialIndex: 2
@@ -52,7 +53,13 @@ const Home = () => {
                                 healthier way
                                 of life
                             </h1>
-                            <ButtonStyle btnText={'Explore Now'} />
+                            <NavLink to={'home/shop'} className={home.buttonStyle}>
+                                <p className={home.btnText}>'Explore Now'</p>
+                                <div className={home.btnImageHolder}>
+                                    <img src={vector} alt="vector-icons" />
+                                </div>
+                            </NavLink>
+
                         </div>
                     </div>
                 </div>

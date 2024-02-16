@@ -7,6 +7,7 @@ import arrow from './../../img/icons/arrow-menu-down.svg'
 import header from './Header.scss'
 import burger from '../../img/icons/bars-solid.svg'
 import { useSelector } from 'react-redux'
+import Cart from './Cart'
 
 const Header = () => {
     //-----------------------------
@@ -58,20 +59,8 @@ const Header = () => {
                         </ul>
                     </nav>
                 </div>
-                <div className="cart">
-                    <div className="cartBlock">
-                        <NavLink to={'cart'} className="cartBody">
-                            <img src={cartImg} alt="cart" />
-                        </NavLink>
-                        <div className="cartText">Cart {cart.length}</div>
-                    </div>
-                    <div className="menuIcon">
-                        <button onClick={handleOpen} className='burger'><span></span></button>
-                    </div>
 
-
-                </div>
-
+                <Cart data={cart} image={cartImg} btnfunction={handleOpen} />
             </div>
 
         </header>

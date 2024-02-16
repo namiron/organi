@@ -1,10 +1,11 @@
 
 
 export const ROUTES = {
-    home: 'organ',
+    layout: '/',
+    home: 'home',
     aboutUs: 'aboutus',
     not_fount: '/*',
-    shop: 'shop',
+    home_shop: 'home/shop',
     cart: 'cart',
     shop_body: "shop/:id",
     services: 'services',
