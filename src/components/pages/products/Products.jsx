@@ -2,14 +2,17 @@
 import React, { useState, useEffect } from 'react';
 import home from './../../Home/Home.module.scss'
 import { useDispatch, useSelector } from 'react-redux'
-import { getProducts } from '../../../redux/ProductsSlice'
+import { addItemToCart, getProducts } from '../../../redux/ProductsSlice'
 import stars from './../../../img/icons/Star.svg'
 import { NavLink } from 'react-router-dom'
-import { ROUTES } from '../../routes/Routes';
 
 
 
 export const OurProducts = () => {
+
+    const handleAddToCart = (product) => {
+        dispatch(addItemToCart(product));
+    };
 
     const dispatch = useDispatch()
 
@@ -50,7 +53,7 @@ export const OurProducts = () => {
                                 </div>
                                 <div className={home.btnBlock}>
                                     <NavLink className={home.shopBodyAddToCart} to={`/shop/${id}`}>Show More</NavLink>
-                                    <button className={home.shopBodyAddToCart}>Add to Cart</button>
+                                    <button onClick={() => handleAddToCart({ id, name, price, image, category, oldPrice })} className={home.shopBodyAddToCart}>Add to Cart</button>
                                 </div>
                             </div>
 
@@ -66,12 +69,19 @@ export const OurProducts = () => {
 
 export const OfferProducts = () => {
 
+
     //--------------------------------------
     const dispatch = useDispatch()
     const { list, status, error } = useSelector((state) => state.products)
     const listOfferSlice = list.slice(0, 3)
 
     //-----------------------
+
+
+    const handleAddToCart = (product) => {
+        dispatch(addItemToCart(product));
+    };
+
     useEffect(() => {
         dispatch(getProducts())
     }, [dispatch])
@@ -107,7 +117,7 @@ export const OfferProducts = () => {
                                 </div>
                                 <div className={home.btnBlock}>
                                     <NavLink className={home.shopBodyAddToCart} to={`/shop/${item.id}`}>Show More</NavLink>
-                                    <button className={home.shopBodyAddToCart}>Add to Cart</button>
+                                    <button onClick={() => handleAddToCart(item)} className={home.shopBodyAddToCart}>Add to Cart</button>
                                 </div>
                             </div>
 
@@ -122,6 +132,9 @@ export const OfferProducts = () => {
 
 
 export const ShopProducts = () => {
+    const handleAddToCart = (product) => {
+        dispatch(addItemToCart(product));
+    };
 
     //--------------------------------------
     const dispatch = useDispatch()
@@ -162,7 +175,7 @@ export const ShopProducts = () => {
                                         </div>
                                     </div>
                                     <NavLink className={home.shopBodyAddToCart} to={`/shop/${item.id}`}>Show More</NavLink>
-                                    <button className={home.shopBodyAddToCart}>Add to Cart</button>
+                                    <button onClick={addItemToCart} className={home.shopBodyAddToCart}>Add to Cart</button>
                                 </div>
                             </article>
                         ))
